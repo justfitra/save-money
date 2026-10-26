@@ -1,0 +1,414 @@
+:root {
+  --bg: #f3f4fb;
+  --card: #fff;
+  --tx: #1e2235;
+  --mu: #7a8199;
+  --ac: #6366f1;
+  --ac2: #06b6d4;
+  --ok: #16a34a;
+  --bad: #e11d48;
+  --wn: #f59e0b;
+  --bd: #e7e9f3;
+  --sh: 0 4px 18px #2a30571a;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1220;
+    --card: #181c2e;
+    --tx: #eceefa;
+    --mu: #9aa1bd;
+    --ac: #818cf8;
+    --ac2: #22d3ee;
+    --ok: #4ade80;
+    --bad: #fb7185;
+    --wn: #fbbf24;
+    --bd: #272c45;
+    --sh: 0 4px 18px #0006;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    sans-serif;
+  background: var(--bg);
+  color: var(--tx);
+  padding-bottom: 90px;
+}
+.w {
+  max-width: 1000px;
+  margin: auto;
+  padding: 14px;
+}
+header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+header h1 {
+  font-size: 20px;
+  margin: 0;
+  flex: 1;
+}
+input,
+select,
+button {
+  font: inherit;
+  padding: 9px 12px;
+  border: 1px solid var(--bd);
+  border-radius: 12px;
+  background: var(--card);
+  color: var(--tx);
+  max-width: 100%;
+}
+button {
+  background: var(--ac);
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+button.g {
+  background: var(--card);
+  color: var(--tx);
+  border: 1px solid var(--bd);
+  padding: 6px 9px;
+}
+.card {
+  background: var(--card);
+  border-radius: 18px;
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: var(--sh);
+}
+.card h3 {
+  margin: 0 0 10px;
+  font-size: 15px;
+}
+.hero {
+  background: linear-gradient(135deg, var(--ac), var(--ac2));
+  color: #fff;
+  border-radius: 22px;
+  padding: 20px;
+  margin-bottom: 12px;
+  box-shadow: var(--sh);
+}
+.hero h2 {
+  font-size: clamp(26px, 7vw, 38px);
+  margin: 4px 0;
+}
+.hero small,
+.hero div {
+  opacity: 0.92;
+  font-size: 13px;
+}
+.hero .neg {
+  color: #ffd1da;
+}
+.kp {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.kc {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: var(--sh);
+}
+.k {
+  font-size: 12px;
+  color: var(--mu);
+}
+.v {
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 2px;
+}
+.in {
+  color: var(--ok);
+}
+.out {
+  color: var(--bad);
+}
+.g2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 12px;
+}
+.g2 .card {
+  margin: 0;
+}
+.pl {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+}
+.pl button {
+  background: var(--card);
+  color: var(--tx);
+  border: 1px solid var(--bd);
+  padding: 7px 13px;
+  border-radius: 99px;
+  flex: none;
+}
+.pl button.on {
+  background: var(--ac);
+  color: #fff;
+  border-color: var(--ac);
+}
+.dn {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.ds {
+  width: 160px;
+  height: 160px;
+  flex: none;
+}
+.dc {
+  font-size: 13px;
+  font-weight: 700;
+  fill: var(--tx);
+}
+.dsub {
+  font-size: 8px;
+  fill: var(--mu);
+}
+.lg {
+  flex: 1;
+  min-width: 170px;
+  font-size: 13px;
+}
+.lg > div {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 5px 0;
+}
+.lg i {
+  width: 11px;
+  height: 11px;
+  border-radius: 4px;
+  flex: none;
+}
+.lg span {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.lg em {
+  color: var(--mu);
+  font-style: normal;
+  width: 34px;
+  text-align: right;
+}
+.ls .it {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--bd);
+}
+.ic {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background: var(--bg);
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  flex: none;
+}
+.mid {
+  flex: 1;
+  min-width: 0;
+}
+.mid b {
+  display: block;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.mid small {
+  color: var(--mu);
+  font-size: 12px;
+}
+.am {
+  font-weight: 700;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.ac {
+  display: flex;
+  gap: 4px;
+}
+.em {
+  text-align: center;
+  color: var(--mu);
+  padding: 18px;
+}
+.row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.row input,
+.row select {
+  flex: 1;
+  min-width: 120px;
+}
+.bg {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+.bg .card {
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+}
+.bg svg {
+  width: 96px;
+  height: 96px;
+}
+li {
+  margin: 8px 0;
+  font-size: 14px;
+  line-height: 1.45;
+}
+ul {
+  padding-left: 18px;
+  margin: 0;
+}
+#msg {
+  font-size: 12px;
+  color: var(--mu);
+  margin-top: 8px;
+}
+details {
+  margin-bottom: 12px;
+}
+summary {
+  cursor: pointer;
+  color: var(--mu);
+  font-size: 13px;
+}
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background: var(--card);
+  box-shadow: 0 -4px 18px #2a30571f;
+  padding: 6px 6px calc(6px + env(safe-area-inset-bottom));
+  z-index: 5;
+}
+nav button {
+  flex: 1;
+  background: none;
+  color: var(--mu);
+  font-size: 10px;
+  padding: 6px 2px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-weight: 500;
+}
+nav button span {
+  font-size: 19px;
+}
+nav button.on {
+  color: var(--ac);
+  background: var(--bg);
+  font-weight: 700;
+}
+.fab {
+  position: fixed;
+  right: 16px;
+  bottom: 84px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  font-size: 28px;
+  padding: 0;
+  box-shadow: 0 6px 18px #6366f166;
+  z-index: 6;
+}
+@media (min-width: 760px) {
+  body {
+    padding-bottom: 20px;
+  }
+  nav {
+    position: sticky;
+    top: 8px;
+    bottom: auto;
+    border-radius: 18px;
+    max-width: 980px;
+    margin: 0 auto 14px;
+    padding: 6px;
+  }
+  nav button {
+    font-size: 12px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6px;
+  }
+  .fab {
+    bottom: 24px;
+  }
+}
+.md {
+  position: fixed;
+  inset: 0;
+  background: #0009;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  z-index: 20;
+}
+.md[hidden] {
+  display: none;
+}
+.md .card {
+  width: 100%;
+  max-width: 420px;
+  margin: 0;
+}
+.md label {
+  display: block;
+  font-size: 12px;
+  color: var(--mu);
+  margin-top: 8px;
+}
+.md input {
+  width: 100%;
+}
+.ic i {
+  font-size: 16px;
+}
+.hero small,
+.hero div {
+  display: block;
+}

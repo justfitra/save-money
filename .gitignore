@@ -1,0 +1,20 @@
+# dependensi (dibuat ulang lewat npm install)
+node_modules/
+
+# hasil build (dibuat ulang lewat npm run build)
+dist/
+
+# log
+npm-debug.log*
+*.log
+
+# variabel rahasia lokal
+.env
+.env.*
+!.env.example
+
+# file editor dan sistem operasi
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
